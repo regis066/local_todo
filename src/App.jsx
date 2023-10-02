@@ -11,7 +11,7 @@ const App = () => {
 
     const addTask = ( task) => {
         const newTask = [...tasks , task];
-        setTasks(newTask); 
+        setTasks(newTask);
     }
 
     const removeTask = (index) => {
