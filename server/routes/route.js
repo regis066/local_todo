@@ -25,7 +25,7 @@ route.patch('/tasks/:id' , async(req,res) => {
     const updates = Object.keys(req.body);
     const allowedUpdates = ['title' , 'completed'];
     const isValidOperation = updates.every((update) => {
-        allowedUpdates.includes(update)
+        return allowedUpdates.includes(update)
     })
 
     if(!isValidOperation) {
